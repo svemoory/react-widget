@@ -12,9 +12,9 @@
     "lint": "eslint src",
     "test": "jest --coverage",
     "test:watch": "npm run test -- --watch",
-    "build": "NODE_ENV=production ./build-tools/build.sh",
-    "compile": "NODE_ENV=production webpack --config build-tools/webpack.config.prod.js --progress",
-    "buildSite": "NODE_ENV=production webpack --config build-tools/webpack.config.site.js --progress",
+    "build": "cross-env NODE_ENV=production sh ./build-tools/build.sh",
+    "compile": "cross-env NODE_ENV=production webpack --config build-tools/webpack.config.prod.js --progress",
+    "buildSite": "cross-env NODE_ENV=production webpack --config build-tools/webpack.config.site.js --progress",
     "prepublish": "npm run build && npm run compile"
   },
   "repository": {
@@ -48,11 +48,13 @@
     "react-hot-loader": "^3.0.0-beta.6",
     "react-test-renderer": "^15.4.2",
     "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "webpack-dev-server": "^2.2.0",
+    "cross-env": "^5.0.0"
   },
   "peerDependencies": {
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

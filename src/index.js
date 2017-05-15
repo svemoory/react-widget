@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Starter = () => (
+const Trends = () => (
   <div>
-    <h1>React Component Boilerplate</h1>
+    <h1>Trends Component</h1>
   </div>
 );
 
-export const OtherComp = () => <div>Hello there!</div>;
-
-export default Starter;
+export default Trends;
