@@ -55,5 +55,7 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react-mlsdata": "^0.5.4"
+  }
 }

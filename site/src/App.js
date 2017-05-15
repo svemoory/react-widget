@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Starter from '../../src';
+import Trends from '../../src';
 
 const App = () => (
   <div>
-    <Starter />
+    <Trends />
   </div>
 );
 
