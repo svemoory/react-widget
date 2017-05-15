@@ -1,7 +1,7 @@
 {
-  "name": "react-component-boilerplate",
+  "name": "react-trends",
   "version": "0.1.0",
-  "description": "A simple responsive sidebar component for React",
+  "description": "A React component for simplifiying working MLSListings Trend Data",
   "keywords": [
     "react",
     "react-component"
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregchamberlain/react-component-boilerplate.git"
+    "url": "git+https://github.com/svemoory/react-mlsmarkettrends"
   },
   "author": "Greg Chamberlain <gregchamberlain94@gmail.com> (https://gregchamberlain.github.io)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gregchamberlain/react-component-boilerplate/issues"
+    "url": "https://github.com/svemoory/react-mlsmarkettrends/issues"
   },
-  "homepage": "https://github.com/gregchamberlain/react-component-boilerplate#readme",
+  "homepage": "https://github.com/svemoory/react-mlsmarkettrends#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-core": "^6.5.2",
