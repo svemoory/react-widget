@@ -1,7 +1,7 @@
 {
   "name": "react-widgetselection",
-  "version": "0.0.1",
-  "description": "A React component for selection to create a widget",
+  "version": "1.0.1",
+  "description": "A React component for geography selection to create a widget",
   "keywords": [
     "react",
     "react-component"

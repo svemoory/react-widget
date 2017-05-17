@@ -39,6 +39,12 @@ class LoadGeography extends Component {
       selectType
     });
   }
+
+   setValuesSelected(e) {
+     const selectValues = this.state.selectValues;
+     selectValues.selected = e.target.value;
+
+   }
   render() {
     const geographies = this.props.data;
     const { selectType, selectValues } = this.state;
@@ -63,7 +69,7 @@ class LoadGeography extends Component {
     );
 
     var selectGeoName = (
-      <select className="custom-select w-100" value={selectValues.selected}>
+      <select className="custom-select w-100" value={selectValues.selected} onChange={this.setValuesSelected}>>
         <option value="">Geography Name...</option>
         {values == ""
           ? ""
