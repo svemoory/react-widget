@@ -43,6 +43,9 @@ class LoadGeography extends Component {
    setValuesSelected(e) {
      const selectValues = this.state.selectValues;
      selectValues.selected = e.target.value;
+         this.setState({
+      selectValues
+    });
 
    }
   render() {
