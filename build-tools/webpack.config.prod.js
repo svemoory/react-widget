@@ -19,8 +19,8 @@ var config = {
     ]
   },
   output: {
-    filename: 'dist/ReactTrends.min.js',
-    library: 'ReactTrends',
+    filename: 'dist/ReactWidgetSelection.min.js',
+    library: 'ReactWidgetSelection',
     libraryTarget: 'umd',
   },
   plugins: [

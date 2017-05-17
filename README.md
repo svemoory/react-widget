@@ -1,3 +1,3 @@
-# React Trends Component
+# React Widget Selection Component
 
-A React component for simplifiying working MLSListings Trend Data.
+A React component for making selection to create a widget

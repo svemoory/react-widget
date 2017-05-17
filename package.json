@@ -1,7 +1,7 @@
 {
-  "name": "react-trends",
-  "version": "0.1.3",
-  "description": "A React component for simplifiying working MLSListings Trend Data",
+  "name": "react-widgetselection",
+  "version": "0.0.1",
+  "description": "A React component for selection to create a widget",
   "keywords": [
     "react",
     "react-component"
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svemoory/react-trends"
+    "url": "git+https://github.com/svemoory/react-widgetselection"
   },
   "author": "SNV",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/svemoory/react-trends/issues"
+    "url": "https://github.com/svemoory/react-widgetselection/issues"
   },
-  "homepage": "https://github.com/svemoory/react-trends#readme",
+  "homepage": "https://github.com/svemoory/react-widgetselection#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-core": "^6.5.2",
@@ -56,6 +56,7 @@
     "react-dom": "^15.3.0"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "react-mlsdata": "^0.5.4"
   }
 }

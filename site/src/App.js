@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Trends from '../../src';
+import WidgetSelection from '../../src';
 
 const App = () => (
   <div>
-    <Trends />
+    <WidgetSelection />
   </div>
 );
 
