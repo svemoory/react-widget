@@ -45,8 +45,7 @@ var config = {
       'process.env.NODE_ENV': JSON.stringify(env)
     }),
         new ExtractTextPlugin( "dist/reactwidget-bundle.css" ),
-  ],
-    
+  ]
 },
 
 
