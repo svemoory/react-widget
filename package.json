@@ -1,6 +1,6 @@
 {
-  "name": "react-widget",
-  "version": "1.0.0",
+  "name": "react-biwidget",
+  "version": "1.0.1",
   "description": "A React component to generate widget",
   "keywords": [
     "react",
