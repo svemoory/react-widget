@@ -21,8 +21,8 @@ var config = {
     ]
   },
   output: {
-    filename: 'dist/ReactWidgetSelection.min.js',
-    library: 'ReactWidgetSelection',
+    filename: 'dist/ReactWidget.min.js',
+    library: 'ReactWidget',
     libraryTarget: 'umd',
   },
   plugins: [
