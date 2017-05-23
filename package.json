@@ -1,7 +1,7 @@
 {
-  "name": "react-widgetselection",
-  "version": "1.0.1",
-  "description": "A React component for geography selection to create a widget",
+  "name": "react-widget",
+  "version": "1.0.0",
+  "description": "A React component to generate widget",
   "keywords": [
     "react",
     "react-component"
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/svemoory/react-widgetselection"
+    "url": "git+https://github.com/svemoory/react-widget"
   },
   "author": "SNV",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/svemoory/react-widgetselection/issues"
+    "url": "https://github.com/svemoory/react-widget/issues"
   },
-  "homepage": "https://github.com/svemoory/react-widgetselection#readme",
+  "homepage": "https://github.com/svemoory/react-widget#readme",
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-core": "^6.5.2",
@@ -56,7 +56,13 @@
     "react-dom": "^15.3.0"
   },
   "dependencies": {
+    "c3": "^0.4.11",
+    "css-loader": "^0.28.2",
     "lodash": "^4.17.4",
-    "react-mlsdata": "^0.5.4"
+    "numeral": "^2.0.6",
+    "react-mlsdata": "^0.5.5",
+    "reactstrap": "^4.6.2",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8"
   }
 }

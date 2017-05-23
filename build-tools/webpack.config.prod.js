@@ -13,9 +13,11 @@ var config = {
   externals: {
     'react': reactExternal,
   },
-  module: {
+      module: {
     loaders: [
-      { test: /\.js$/, loaders: ['babel-loader'], exclude: /node_modules/ }
+      { test: /\.css$/,  loader: 'style-loader!css-loader' },
+      { test: /\.js[x]?$/,  exclude: /node_modules/, loader: 'babel-loader' },
+ { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'url-loader?limit=8192' }
     ]
   },
   output: {
