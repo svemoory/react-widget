@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var env = process.env.NODE_ENV;
 
 var reactExternal = {
@@ -15,7 +16,8 @@ var config = {
   },
       module: {
     loaders: [
-      { test: /\.css$/,  loader: 'style-loader!css-loader' },
+     /* { test: /\.css$/,  loader: 'style-loader!css-loader' },*/
+       { test: /\.css$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use: 'css-loader'}) },
       { test: /\.js[x]?$/,  exclude: /node_modules/, loader: 'babel-loader' },
  { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'url-loader?limit=8192' }
     ]
@@ -38,7 +40,8 @@ var config = {
     },
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env)
-    })
+    }),
+        new ExtractTextPlugin({ filename: 'css/[name].css', disable: false, allChunks: true }),
   ]
 }
 
