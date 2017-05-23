@@ -21,8 +21,11 @@ module.exports = {
 
       module: {
     loaders: [
-     /* { test: /\.css$/,  loader: 'style-loader!css-loader' },*/
-       { test: /\.css$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use: 'css-loader'}) },
+   /*    {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader!postcss-loader')
+      },*/
+      { test: /\.css$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use: 'css-loader'}) },
       { test: /\.js[x]?$/,  exclude: /node_modules/, loader: 'babel-loader' },
  { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'url-loader?limit=8192' }
     ]
@@ -30,11 +33,12 @@ module.exports = {
 
 
   plugins: [
-    new ExtractTextPlugin({ filename: 'css/[name].css', disable: false, allChunks: true }),
+    new ExtractTextPlugin( "dist/reactwidget-bundle.css" ),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
   ],
+
 
   devServer: {
     host: 'localhost',
