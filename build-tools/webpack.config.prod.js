@@ -41,7 +41,7 @@ var config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(env)
     }),
-        new ExtractTextPlugin({ filename: 'styles.css',  allChunks: true }),
+        new ExtractTextPlugin({ filename: 'css/[name].css', disable: false, allChunks: true }),
   ]
 }
 

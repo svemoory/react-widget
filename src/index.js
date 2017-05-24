@@ -4,6 +4,7 @@ import BIWidget from "./BIWidget";
 
 
 
+
 export default class Widget extends React.Component {
    constructor(props) {
     super(props);
