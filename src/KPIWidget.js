@@ -1,10 +1,12 @@
 import React from 'react';
 import {  Container ,Row } from 'reactstrap';
-import "./styles/index.css";
+require("./styles.css")
 import logo from './Images/aculist-edge_logo.png';
 import avgsqft from './Images/bi_avg_sq_ft.png';
 import dom from './Images/bi_dom.png';
 import money from './Images/bi_money.png';
+//import 'bootstrap/dist/css/bootstrap.css';
+
 
 export default class KPIWidget extends React.Component{    
 
