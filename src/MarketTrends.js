@@ -1,8 +1,9 @@
 
 import React from 'react';
 import {ButtonGroup, Button} from 'reactstrap';
-import 'c3/c3.css';
-import c3 from 'c3/c3.js';
+//import 'c3/c3.css';
+//import c3 from 'c3/c3.js';
+import './css/main.css'
 
 const columns = [
   ['Active', 30, 200, 100, 400, 150, 250],
