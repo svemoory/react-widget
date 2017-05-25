@@ -19,7 +19,7 @@ var config = {
      // { test: /\.css$/,  loader: 'style-loader!css-loader' },
       { test: /\.css$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use: 'css-loader'}) },
       { test: /\.js[x]?$/,  exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'file-loader?name=lib/images/[name].[hash].[ext]' }
+      { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'file-loader?name=images/[name].[ext]' }
     ]
   },
   output: {

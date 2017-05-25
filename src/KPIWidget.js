@@ -1,10 +1,11 @@
 import React from 'react';
 import {  Container ,Row } from 'reactstrap';
 //import  './styles/index.css';
-const logo=require('./Images/aculist-edge_logo.png');
-const avgsqft = require('./Images/bi_avg_sq_ft.png');
-const dom = require('./Images/bi_dom.png');
-const money = require('./Images/bi_money.png');
+
+const logo=require('../images/aculist-edge_logo.png');
+const avgsqft = require('../images/bi_avg_sq_ft.png');
+const dom = require('../images/bi_dom.png');
+const money = require('../images/bi_money.png');
 //import 'bootstrap/dist/css/bootstrap.css';
 import '../css/main.css'
 
