@@ -1,6 +1,6 @@
 {
   "name": "react-biwidget",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A React component to generate widget",
   "keywords": [
     "react",
@@ -62,7 +62,12 @@
     "file-loader": "^0.11.1",
     "lodash": "^4.17.4",
     "numeral": "^2.0.6",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-addons-transition-group": "^15.5.2",
+    "react-dom": "^15.5.4",
     "react-mlsdata": "^0.5.5",
+    "react-transition-group": "^1.1.2",
     "reactstrap": "^4.6.2",
     "style-loader": "^0.18.1",
     "url-loader": "^0.5.8"
