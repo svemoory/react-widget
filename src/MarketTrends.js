@@ -2,7 +2,7 @@
 import React from 'react';
 import {ButtonGroup, Button} from 'reactstrap';
 //import 'c3/c3.css';
-//import c3 from 'c3/c3.js';
+import c3 from 'c3/c3.js';
 import './css/main.css'
 
 const columns = [
