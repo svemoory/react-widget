@@ -19,7 +19,7 @@ var config = {
      // { test: /\.css$/,  loader: 'style-loader!css-loader' },
       { test: /\.css$/, loader: ExtractTextPlugin.extract({fallback:'style-loader',use: 'css-loader'}) },
       { test: /\.js[x]?$/,  exclude: /node_modules/, loader: 'babel-loader' },
- { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'url-loader?limit=8192' }
+      { test: /\.(png|jpg|jpeg|gif|woff)$/, loader: 'file-loader?name=lib/images/[name].[hash].[ext]' }
     ]
   },
   output: {
@@ -27,31 +27,7 @@ var config = {
     library: 'ReactWidget',
     libraryTarget: 'umd',
   },
-      externals: [
-      {
-        react: {
-          root: 'React',
-          commonjs2: 'react',
-          commonjs: 'react',
-          amd: 'react'
-        }
-      },
-      {
-        'react-dom': {
-          root: 'ReactDOM',
-          commonjs2: 'react-dom',
-          commonjs: 'react-dom',
-          amd: 'react-dom'
-        }
-      },
-      {
-        'react-transition-group': {
-          commonjs: 'react-transition-group',
-          commonjs2: 'react-transition-group',
-          amd: 'react-transition-group',
-        }
-      }
-    ],
+    
   plugins: [
     {
       apply: function apply(compiler) {
