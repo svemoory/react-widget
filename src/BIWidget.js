@@ -22,8 +22,9 @@ export default class BIWidget extends React.Component {
   }
   _fetchLinkedWidgetData(geotype, geoname,widgettype,data) {
     const widgetOptions = this.state.widgetOptions;
-    var data1=data[0];
-   console.log('data', data1);
+    //this.state.widgettype=widgettype;
+
+    var data1=data[0];  
     if (widgettype === "kpi") {
       if (geotype !== "" && geoname !== "") {
          
@@ -39,14 +40,13 @@ export default class BIWidget extends React.Component {
             ).format("$ 0.00 a");
 
             this.setState({
-              widgetOptions,
+              widgetOptions,widgettype:widgettype
             });
-         
+         console.log('wt',this.state.widgettype);
       }
     }
   }
-  componentDidMount() {
-    console.log('props',this.props);
+  componentDidMount() { 
     this.setState({
       widgettype: this.props.widgettype,
     })
@@ -56,7 +56,7 @@ export default class BIWidget extends React.Component {
     this._fetchLinkedWidgetData(x.geotype, x.geoname,x.widgettype,x.data);   
   }
   render() {
- console.log('test',this.state.widgettype);
+
     var widgetdisplay = "";  
     if (this.state.widgettype === "kpi") {
       widgetdisplay =

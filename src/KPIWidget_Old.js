@@ -1,9 +1,12 @@
 import React from 'react';
 import {  Container ,Row } from 'reactstrap';
+//import  './styles/index.css';
+
 const logo=require('./images/aculist-edge_logo.png');
 const avgsqft = require('./images/bi_avg_sq_ft.png');
 const dom = require('./images/bi_dom.png');
 const money = require('./images/bi_money.png');
+//import 'bootstrap/dist/css/bootstrap.css';
 import './css/main.css'
 
 
@@ -11,11 +14,8 @@ export default class KPIWidget extends React.Component{
 
     render(){
 
-        var props = this.props;  
-       var msp=this.props.MedianSalePrice;
-       var dom1=this.props.AvgPricePerSqFt;
-       var ppsf=this.props.SoldAvgDOM;
-        console.log(ppsf);
+        var props = this.props;   
+        console.log('kpi props', this.props) ;
         return (
             <Container id="kpiWidget" className="px-0" style={{width:425, height:350}}>
             <Row className="ml-0">
@@ -30,7 +30,7 @@ export default class KPIWidget extends React.Component{
     </div>
     <div>
         <ul className="list-group border-0">
-                           <li className={msp=="$ 0.00 "? "hidden" : 'list-group-item clearfix border-0 py-0 px-1' }   >
+                           <li className="list-group-item clearfix border-0 py-0 px-1">
                                <div className="col-4">
                                    <img alt="" className="mx-auto d-block" src={avgsqft}/>
                                </div>
@@ -43,7 +43,7 @@ export default class KPIWidget extends React.Component{
                                    </h2>
                                </div>
                            </li>  
-                            <li className={dom1==="$ 0.00 "? "hidden" : 'list-group-item clearfix border-0 py-0 px-1' }   >
+                           <li className="list-group-item clearfix border-0 py-0 px-1">
                                <div className="col-4">
                                    <img alt=""  className="mx-auto d-block" src={money}/>                                 
                                </div>
@@ -56,7 +56,7 @@ export default class KPIWidget extends React.Component{
                                    </h2>
                                </div>
                            </li>     
-                            <li className={typeof(ppsf)=="undefined"? "hidden" : 'list-group-item clearfix border-0 py-0 px-1' }   >
+                           <li className="list-group-item clearfix border-0 py-0 px-1">
                                <div className="col-4">
                                    <img alt=""  className="mx-auto d-block" src={dom}/>                                   
                                </div>
