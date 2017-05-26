@@ -17,7 +17,7 @@ export default class KPIWidget extends React.Component{
        var ppsf=this.props.SoldAvgDOM;
         console.log(ppsf);
         return (
-            <Container id="kpiWidget" className="px-0" style={{width:425, height:350}}>
+            <Container id="kpiWidget" className="px-0" style={{width:425, height:300}}>
             <Row className="ml-0">
                 <div className="col-12">
                     <div className="mt-0">

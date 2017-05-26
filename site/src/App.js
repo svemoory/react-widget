@@ -7,7 +7,7 @@ import Widget from '../../src';
 const App = () => (
 
   <div>
-    <Widget collection='markettrends' select='SoldAvgDOM,GeographyName,GeographyType' filter={filter} geotype='City' geoname='Sunnyvale' widgettype='markettrends' />
+    <Widget collection='markettrends' select='SoldAvgDOM,GeographyName,GeographyType' filter={filter} geotype='City' geoname='Sunnyvale' widgettype='kpi' />
   </div>
 );
 
